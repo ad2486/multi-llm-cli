@@ -14,6 +14,10 @@
 
 Uma CLI modular para terminal com suporte a múltiplos provedores de IA.
 
+![Python](https://img.shields.io/badge/python-3.10+-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Status](https://img.shields.io/badge/status-active-success)
+
 ## Funcionalidades
 
 * 🌐 Suporte a múltiplos provedores (OpenRouter, Groq e Google), com planos de expansão
