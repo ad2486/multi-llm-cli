@@ -109,19 +109,23 @@ def handle_slash_command(user_input, memory, current_config, provider):
 
         if not last_msg:
             console.print("[bold red]❌ No AI answer to export![/bold red].")
-            if arg:
-                filename = arg if arg.endswith(".md") else f"{arg}.md"
-            else:
-                filename = f"export_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.md"
-
-            try:
-                with open(filename, "w", encoding="utf-8") as f:
-                    f.write(last_msg)
-                console.print(f"[bold green]📄 Answer exported with success to:[/bold green] {filename}")
-            except Exception as e:
-                console.print(f"[bold red]❌ Error at export:[/bold red] {e}")
-
             return True
+
+        if arg:
+            filename = arg if arg.endswith(".md") else f"{arg}.md"
+        else:
+            filename = f"export_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.md"
+
+        try:
+            with open(filename, "w", encoding="utf-8") as f:
+                f.write(last_msg)
+
+            console.print(f"[bold green]📄 Answer exported with success to:[/bold green] {filename}")
+
+        except Exception as e:
+            console.print(f"[bold red]❌ Error at export:[/bold red] {e}")
+
+        return True
 
 
 
@@ -152,7 +156,7 @@ def handle_slash_command(user_input, memory, current_config, provider):
 
 
     elif cmd == "/provider":
-        valid_providers = ["openrouter", "groq"]
+        valid_providers = ["openrouter", "groq", "google"]
 
         if not arg:
             current = current_config.get("provider_name", "undefined")

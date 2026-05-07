@@ -39,9 +39,7 @@ BANNER = r"""
                                                                                     by @ad2486                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
 ------------------------------------------------------------------------------------------------         
 """
-rainbow_banner = Text(BANNER)
-rainbow_banner.stylize("bold magenta", 0, len(BANNER) // 2)
-rainbow_banner.stylize("bold cyan", len(BANNER) // 2, len(BANNER))
+
 
 def print_nyan_banner(text):
     lines = text.splitlines()
