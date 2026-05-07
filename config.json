@@ -1,0 +1,5 @@
+{
+    "model": "openrouter/owl-alpha",
+    "provider_name": "openrouter",
+    "system_prompt": ""
+}
