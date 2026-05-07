@@ -1,5 +1,7 @@
 # Multi LLM CLI
 
+🇺🇸 English | 🇧🇷 [Português](README.pt-BR.md)
+
 
 ```text
 ███╗   ███╗██╗   ██╗██╗  ████████╗██╗      ██╗     ██╗     ███╗   ███╗       ██████╗██╗     ██╗
@@ -95,3 +97,4 @@ This CLI was one of my first real-world Python projects, built to learn about AP
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
