@@ -87,6 +87,7 @@ I'm currently learning HTML/CSS/JS for fullstack freelance work, and I've alread
 This CLI was one of my first real-world Python projects, built to learn about API integration, project structure, and terminal applications.
 
 - 🐙 GitHub: [@ad2486](https://github.com/ad2486)
+  
 
 
 ## License
