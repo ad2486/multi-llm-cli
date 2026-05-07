@@ -1,0 +1,6 @@
+rich
+requests
+litellm
+dotenv
+typer
+google-generativeai
